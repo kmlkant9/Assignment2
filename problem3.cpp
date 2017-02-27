@@ -7,12 +7,12 @@ int sequence(vector <int> v,int k,int len){
 	vector <int> a;
 	int currentmax=0;
 	w.push_back(v[k]);
-	for(int i=0;i<len;i++){
-		int index=(int)()(i+k)%len);
-		int x=(upper_bound(w.begin(),w.end(),v[index])-w.begin());
+	for(int i=1;i<len;i++){
+		int index=(int)((i+k)%len);
 		if(v[index]>w[w.size()-1])
 			w.push_back(v[index]);
-		else if()
+		else 
+			return w.size();
 	}
 	return w.size();
 }
